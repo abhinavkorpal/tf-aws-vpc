@@ -25,8 +25,7 @@ module "vpc" {
   dhcp_options_domain_name_servers = ["127.0.0.1", "10.10.0.2"]
 
   tags = {
-    Owner       = "user"
-    Environment = "staging"
-    Name        = "complete"
+    Environment = "dev"
+    Name        = "complete-vpc-test"
   }
 }

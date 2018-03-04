@@ -21,8 +21,6 @@ module "vpc" {
   enable_nat_gateway           = true
 
   tags = {
-    Team        = "DevOps"
-    Project     = "infrastructure-development"
     Name        = "asymetrical-subnets-test"
     Environment = "dev"
   }

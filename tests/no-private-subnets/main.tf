@@ -20,9 +20,7 @@ module "vpc" {
   enable_nat_gateway   = false
 
   tags = {
-    Team        = "DevOps"
     Environment = "dev"
     Name        = "no-private-subnets"
-    Project     = "infrastructure-development"
   }
 }

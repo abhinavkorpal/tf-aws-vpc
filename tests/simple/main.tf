@@ -18,8 +18,6 @@ module "vpc" {
   single_nat_gateway = true
 
   tags = {
-    Team        = "DevOps"
     Environment = "dev"
-    Project     = "infrastructure-development"
   }
 }
