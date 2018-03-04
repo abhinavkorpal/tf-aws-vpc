@@ -19,13 +19,17 @@ These resources can be used with in this module:
 ## Usage
 
 ```hcl
+terraform {
+  required_version = "~> 0.11.2"
+}
+
 provider "aws" {
   version = "~> 1.0.0"
   region  = "us-east-1"
 }
 
 module "vpc" {
-  source = "terraform-aws-modules/vpc/aws"
+  source = "ssh::git@github.com:burtino/tf-aws-vpc.git?ref=v0.1"
 
   name = "my-vpc"
   cidr = "10.10.0.0/16"
@@ -48,7 +52,3 @@ module "vpc" {
   }
 }
 ```
-
-## Terraform version
-
-Terraform version 0.11.0 or newer is required for this module to work.
